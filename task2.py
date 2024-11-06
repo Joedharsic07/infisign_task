@@ -1,27 +1,24 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+data = []
 
 response = requests.get('https://docs.infisign.io/')
 soup = BeautifulSoup(response.text, 'html.parser')
-title = soup.find_all('section', class_='category-list')
-data = []
-
-for atag in title:
-    anchor = atag.find_all('a', class_='category')
-    for anchors in anchor:
-        product = "https://docs.infisign.io" + anchors.get('href')
-        nextresponse = requests.get(product)
-        heading_soup = BeautifulSoup(nextresponse.text, 'html.parser')
-        heading = heading_soup.find_all('h1')
-        for headings in heading:
-            head = headings.get_text()
-            link = heading_soup.find_all('ul', class_='articleList')
-            for litag in link:  
-                links = litag.find_all('a')
-                for atag in links:
-                    finallink = "https://docs.infisign.io" + atag.get('href')
-                    data.append((head, finallink))  
-
-df= pd.DataFrame(data,columns=['head','links'])
+mainlink = soup.find_all('a', class_='category')
+for anchortag in mainlink:
+    product = "https://docs.infisign.io" + anchortag.get('href')
+    nextresponse = requests.get(product)
+    heading_soup = BeautifulSoup(nextresponse.text, 'html.parser')
+    headings = heading_soup.find('h1')
+    finalhead = headings.get_text()  
+    article_list = heading_soup.find_all('ul', class_='articleList')
+    for listtag in article_list:  
+        links = listtag.find_all('a')
+        for link in links:
+            finallink = "https://docs.infisign.io" + link.get('href')
+            if finallink not in data:
+                data.append((finalhead, finallink))  
+print((data))
+df= pd.DataFrame(data,columns=['category','links'])
 df.to_csv('task1.csv',index=False)

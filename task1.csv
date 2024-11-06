@@ -15,10 +15,10 @@ Getting Started,https://docs.infisign.io/article/136-schema
 Getting Started,https://docs.infisign.io/article/140-design-for-identity
 Infisign - CLI,https://docs.infisign.io/article/169-cli-installation
 Infisign - CLI,https://docs.infisign.io/article/172-cli-infisign-login
+Infisign - CLI,https://docs.infisign.io/article/175-infisign-cli-create-mpwa-application-with-user-assignment
 Infisign - CLI,https://docs.infisign.io/article/177-infisign-cli-create-mpwa-web-application-with-user-assignment
 Infisign - CLI,https://docs.infisign.io/article/174-infisign-cli-create-openid-application-with-user-assignment
 Infisign - CLI,https://docs.infisign.io/article/173-infisign-cli-create-saml-application
-Infisign - CLI,https://docs.infisign.io/article/175-infisign-cli-create-mpwa-application-with-user-assignment
 Infisign - CLI,https://docs.infisign.io/article/176-infisign-cli-create-mpwa-ssh-application-with-user-assignment
 Lifecycle Management,https://docs.infisign.io/article/63-user-provisioning-netsuite
 Lifecycle Management,https://docs.infisign.io/article/70-generating-netsuite-role-master
@@ -47,9 +47,9 @@ Single Sign-On,https://docs.infisign.io/article/76-saml-2-0-for-salesforce
 Single Sign-On,https://docs.infisign.io/article/106-saml-20-configuration-for-adp-to-infisign
 Single Sign-On,https://docs.infisign.io/article/104-saml-2-0-configuration-for-tableau-creative-cloud-to-infisign
 Single Sign-On,https://docs.infisign.io/article/155-saml-2-0-configuration-for-zendesk-to-infisign
+Single Sign-On,https://docs.infisign.io/article/117-life-cycle-management-for-tableau-creative-cloud
 Single Sign-On,https://docs.infisign.io/article/156-saml-2-0-configuration-for-sentry-to-infisign
 Single Sign-On,https://docs.infisign.io/article/105-saml-20-configuration-for-adobe-creative-cloud-to-infisign
-Single Sign-On,https://docs.infisign.io/article/117-life-cycle-management-for-tableau-creative-cloud
 Slack,https://docs.infisign.io/article/77-saml-2-0-confirguration-for-slack
 UniFed,https://docs.infisign.io/article/126-add-infisign-widget-to-flutter-app
 UniFed,https://docs.infisign.io/article/113-infisign-unifed-with-microsoft-oauth2
@@ -66,8 +66,8 @@ UniFed,https://docs.infisign.io/article/129-infisign-oauth-management
 UniFed,https://docs.infisign.io/article/142-infisign-magic-authentication
 UniFed,https://docs.infisign.io/article/146-unifed-schema
 UniFed,https://docs.infisign.io/article/148-unifed-add-users
-UniFed,https://docs.infisign.io/article/144-user-onboarding-web
 UniFed,https://docs.infisign.io/article/147-unifed-redirects
+UniFed,https://docs.infisign.io/article/144-user-onboarding-web
 UniFed,https://docs.infisign.io/article/143-infisign-mobilenumber-authentication
 UniFed,https://docs.infisign.io/article/149-unifed--widget
 UniFed,https://docs.infisign.io/article/190-azure-ad-sso-login-with-unifed-idp
