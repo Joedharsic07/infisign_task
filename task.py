@@ -14,13 +14,14 @@ for atag in title:
         heading=heading_soup.find_all('h1')
         for h in heading:
             head=h.get_text()
-        links=[]
         link=heading_soup.find_all('ul',class_='articleList')
         for ul in link:
             litag=ul.find_all('li')
             for  li in litag:
                 atag=li.find('a')
-                links.append("https://docs.infisign.io"+atag.get('href'))
-        data.append((head,links))
+                if atag:
+                    links="https://docs.infisign.io"+atag.get('href')
+                    data.append((head,links)) 
+print(data)              
 df= pd.DataFrame(data,columns=['head','links'])
 df.to_csv('task.csv',index=False)
